@@ -1,0 +1,7 @@
+.wlc-wrapper {
+  width: 100vw;
+  height: 70vh;
+  background-color: khaki;
+  display: flex;
+  justify-content: center;
+}
