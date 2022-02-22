@@ -13,12 +13,13 @@
 }
 p {
   letter-spacing: 0.1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 0.85rem;
   white-space: pre-line;
   text-align: center;
   line-height: 1.1rem;
   color: rgb(53, 53, 53);
+  font-weight: 600;
 }
 .szoveg {
   max-width: 400px;
