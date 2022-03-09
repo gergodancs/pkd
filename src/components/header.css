@@ -1,18 +1,27 @@
 * {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .body-wrapper {
   width: 100vw;
 }
-.top-img {
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
+.wrapper {
+  background: linear-gradient(210deg, #797979, rgb(29, 29, 29));
+  height: 100vh;
 }
+.top-img {
+  max-width: 40%;
+
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+
+  left: 76%;
+}
+
 .goldenhammer {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .header {
   background-color: transparent;
@@ -27,14 +36,15 @@
   background: none;
   border: none;
   text-decoration: none;
-  color: rgb(231, 233, 218);
+  color: rgb(212, 209, 209);
 
   cursor: pointer;
   padding: 0;
+  transition-duration: 0.4s;
 }
 .dropdown.active > .link,
 .link:hover {
-  color: rgb(53, 53, 53);
+  color: rgb(253, 253, 253);
 }
 
 .dropdown {
@@ -66,7 +76,7 @@ p {
 button {
   letter-spacing: 0.2rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-shadow: 1px 1px 3px rgba(43, 43, 43, 0.527);
 }
 .elso {
@@ -85,14 +95,15 @@ button {
 }
 a {
   text-decoration: none;
-  color: rgb(53, 53, 53);
+  color: rgb(241, 238, 238);
   margin-top: 1.2rem;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
   font-size: 1rem;
+  font-weight: 500;
 }
 a:hover {
-  color: rgb(231, 233, 218);
+  color: rgb(250, 250, 250);
 }
 .dropdown-heading {
   color: #272626;
@@ -102,4 +113,7 @@ a:hover {
 }
 img {
   height: 100vh;
+}
+.dropdown-links > a:nth-of-type(1) {
+  margin-top: 0;
 }

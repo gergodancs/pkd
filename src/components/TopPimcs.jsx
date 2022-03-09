@@ -7,7 +7,7 @@ const TopPimcs = (props) => {
     <div className="top-img" onClick={props.noShowIng}>
       <img
         className="goldenhammer"
-        src={require("./pics/goldenhammer.jpg")}
+        src={require("./pics/danijo.png")}
         alt="hammer"
       />
     </div>

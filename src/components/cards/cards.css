@@ -1,25 +1,27 @@
 .expl {
   display: flex;
-  width: 700px;
-  position: absolute;
+  max-width: 45%;
+  position: relative;
   left: 25%;
   top: 15%;
   text-align: center;
+  column-gap: 1.5rem;
 
   background-color: rgba(245, 245, 245, 0.445);
   padding: 0.75rem;
   border-radius: 0 0.25rem 0.25rem 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(34, 34, 34, 0.904);
+  z-index: 2;
 }
 p {
   letter-spacing: 0.1rem;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 0.85rem;
+
+  font-size: 1rem;
   white-space: pre-line;
   text-align: center;
-  line-height: 1.1rem;
-  color: rgb(53, 53, 53);
-  font-weight: 600;
+  line-height: 1.2rem;
+  color: rgb(24, 24, 24);
+  font-weight: 500;
 }
 .szoveg {
   max-width: 400px;
@@ -61,17 +63,26 @@ textarea {
   outline: none;
   color: rgb(53, 53, 53);
   letter-spacing: 0.1rem;
+  box-shadow: 2px 2px 4px #222;
 }
 .exit {
+  position: absolute;
+  left: 90%;
   font-size: 18px;
   font-weight: 700;
-  color: rgb(61, 61, 61);
-  width: 20px;
-  height: 20px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background-color: rgba(173, 186, 194, 0.815);
+
   cursor: pointer;
+  margin-right: 0;
+  box-shadow: 1px 1px 3px black;
 }
 h3 {
+  font-size: 1.3rem;
   margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+  color: #222;
 }
 
 .icon {
@@ -104,4 +115,25 @@ h5 {
 }
 .h-5 {
   width: 30px;
+}
+.house {
+  z-index: -1;
+  width: 400px;
+  height: auto;
+  filter: blur(0px);
+}
+.ing {
+  z-index: 1;
+}
+.szoveg.ing {
+  width: 300px;
+}
+iframe {
+  height: 90%;
+  width: 100%;
+}
+.close {
+  color: #222;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }

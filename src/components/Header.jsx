@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./header.css";
 
 const Header = (props) => {
@@ -30,27 +30,32 @@ const Header = (props) => {
         </button>
         <div className="dropdown-menu information-grid">
           <div>
-            <div className="dropdown-heading" onClick={props.onClick}>
+            {/* <div className="dropdown-heading" onClick={props.onClick}>
               Biztositás
-            </div>
+            </div> */}
             <div className="dropdown-links">
               <a href="#" onClick={props.onClickIng}>
                 Ingatlan
               </a>
-              <a href="#" onClick={props.onClickCar}>
-                Gépjármű kár
+              <a href="#" onClick={props.onClickBizt}>
+                Biztosítás
               </a>
-              <a href="#" onClick={props.onClickEgyeb}>
-                Egyéb
+              <a href="#" onClick={props.onClickCsalad}>
+                Családjog
               </a>
             </div>
           </div>
           <div>
-            <div className="dropdown-heading">Vállalati jog</div>
             <div className="dropdown-links">
-              <a href="#">valamit</a>
-              <a href="#">ide kell </a>
-              <a href="#">irni</a>
+              <a href="#" onClick={props.onClickAdo}>
+                Adózás
+              </a>
+              <a href="#" onClick={props.onClickBus}>
+                Vállalkozás{" "}
+              </a>
+              <a href="#" onClick={props.onClickPolg}>
+                Polgári jog
+              </a>
             </div>
           </div>
         </div>
@@ -59,9 +64,6 @@ const Header = (props) => {
       <button className="link" onClick={props.onClickContact}>
         Contact
       </button>
-      <Link to="/">
-        <button className="link">Back to Home</button>
-      </Link>
     </div>
   );
 };

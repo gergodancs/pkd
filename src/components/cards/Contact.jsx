@@ -52,15 +52,13 @@ const Contact = (props) => {
         <iframe
           title="adress"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.77933503673!2d19.05149831544009!3d47.51368847917863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc0eabf3821b%3A0x5df76d29053043aa!2sBudapest%2C%20Heged%C5%B1s%20Gyula%20u.%2015%2C%201136!5e0!3m2!1shu!2shu!4v1645425058044!5m2!1shu!2shu"
-          width="350"
-          height="400"
           style={{ border: 0 }}
           // allowfullscreen=""
           loading="lazy"
         ></iframe>
       </div>
       <div className="exit" onClick={props.onClick}>
-        x
+        <p className="close">bezár</p>
       </div>
     </div>
   );
