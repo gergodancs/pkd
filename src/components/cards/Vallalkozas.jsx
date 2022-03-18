@@ -3,11 +3,13 @@ import React from "react";
 const Vallalkozas = (props) => {
   return (
     <div className="expl">
-      <img
-        className="house"
-        src={require("../pics/business.png")}
-        alt="house"
-      />
+      <div className="madalpics">
+        <img
+          className="house"
+          src={require("../pics/business.png")}
+          alt="house"
+        />
+      </div>
       <div className="szoveg ing">
         <h3>Vállalkozás</h3>
         <ul>

@@ -8,6 +8,7 @@ import Contact from "./cards/Contact";
 import Adozas from "./cards/Adozas";
 import Polg from "./cards/Polg";
 import Vallalkozas from "./cards/Vallalkozas";
+import AboutMe from "./cards/AboutMe";
 
 const ContainerPage = () => {
   const [showIng, setShowIng] = useState(false);
@@ -17,6 +18,7 @@ const ContainerPage = () => {
   const [showAdo, setShowAdo] = useState(false);
   const [showBus, setShowBus] = useState(false);
   const [showPolg, setShowPolg] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
   const setBlank = () => {
     setShowCsalad(false);
@@ -26,6 +28,7 @@ const ContainerPage = () => {
     setShowAdo(false);
     setShowBus(false);
     setShowPolg(false);
+    setShowAbout(false);
   };
 
   const showHandlerIng = () => {
@@ -35,6 +38,7 @@ const ContainerPage = () => {
     setShowAdo(false);
     setShowBus(false);
     setShowPolg(false);
+    setShowAbout(false);
     setShowIng(true);
   };
 
@@ -45,6 +49,7 @@ const ContainerPage = () => {
     setShowAdo(false);
     setShowBus(false);
     setShowPolg(false);
+    setShowAbout(false);
     setShowBizt(true);
   };
   const showHandlerCsalad = () => {
@@ -54,6 +59,7 @@ const ContainerPage = () => {
     setShowAdo(false);
     setShowBus(false);
     setShowPolg(false);
+    setShowAbout(false);
     setShowCsalad(true);
   };
   const showHandlerContact = () => {
@@ -63,6 +69,7 @@ const ContainerPage = () => {
     setShowAdo(false);
     setShowBus(false);
     setShowPolg(false);
+    setShowAbout(false);
     setShowContact(true);
   };
   const showHandlerAdo = () => {
@@ -73,6 +80,7 @@ const ContainerPage = () => {
     setShowContact(false);
     setShowBus(false);
     setShowPolg(false);
+    setShowAbout(false);
     setShowAdo(true);
   };
   const showHandlerBus = () => {
@@ -83,6 +91,7 @@ const ContainerPage = () => {
     setShowContact(false);
     setShowBus(false);
     setShowAdo(false);
+    setShowAbout(false);
     setShowPolg(false);
     setShowBus(true);
   };
@@ -95,15 +104,29 @@ const ContainerPage = () => {
     setShowBus(false);
     setShowAdo(false);
     setShowBus(false);
+    setShowAbout(false);
     setShowPolg(true);
+  };
+  const showHandlerAbout = () => {
+    setShowIng(false);
+    setShowBizt(false);
+    setShowCsalad(false);
+    setShowAdo(false);
+    setShowContact(false);
+    setShowBus(false);
+    setShowAdo(false);
+    setShowBus(false);
+    setShowPolg(false);
+    setShowAbout(true);
   };
   const noShowHandlerIng = () => setShowIng(false);
   const noShowHandlerBizt = () => setShowBizt(false);
   const noShowHandlerCsalad = () => setShowCsalad(false);
-  const noShowHandlerContact = () => setShowCsalad(false);
+  const noShowHandlerContact = () => setShowContact(false);
   const noShowHandlerAdo = () => setShowAdo(false);
   const noShowHandlerBus = () => setShowBus(false);
   const noShowHandlerPolg = () => setShowPolg(false);
+  const noShowHandlerAbout = () => setShowAbout(false);
 
   return (
     <div className="wrapper">
@@ -115,8 +138,9 @@ const ContainerPage = () => {
         onClickAdo={showHandlerAdo}
         onClickBus={showHandlerBus}
         onClickPolg={showHandlerPolg}
+        onClickAbout={showHandlerAbout}
       />
-      <TopPimcs noShowIng={setBlank} />
+      {/* <TopPimcs noShowIng={setBlank} /> */}
       {showIng ? <IngatlanCard onClick={noShowHandlerIng} /> : null}
       {showBizt ? <BiztositasCard onClick={noShowHandlerBizt} /> : null}
       {showCsalad ? <Csalad onClick={noShowHandlerCsalad} /> : null}
@@ -124,6 +148,7 @@ const ContainerPage = () => {
       {showAdo ? <Adozas onClick={noShowHandlerAdo} /> : null}
       {showBus ? <Vallalkozas onClick={noShowHandlerBus} /> : null}
       {showPolg ? <Polg onClick={noShowHandlerPolg} /> : null}
+      {showAbout ? <AboutMe onClick={noShowHandlerAbout} /> : null}
     </div>
   );
 };

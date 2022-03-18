@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./header.css";
+import TopPimcs from "./TopPimcs";
 
 const Header = (props) => {
   const clickHandler = (e) => {
@@ -60,9 +61,12 @@ const Header = (props) => {
           </div>
         </div>
       </div>
-      <button className="link">About Me</button>
+
       <button className="link" onClick={props.onClickContact}>
         Contact
+      </button>
+      <button className="link" onClick={props.onClickAbout}>
+        About Me
       </button>
     </div>
   );

@@ -3,7 +3,9 @@ import React from "react";
 const Polg = (props) => {
   return (
     <div className="expl">
-      <img className="house" src={require("../pics/poljo.png")} alt="house" />
+      <div className="madalpics">
+        <img className="house" src={require("../pics/poljo.png")} alt="house" />
+      </div>
       <div className="szoveg ing">
         <h3>Polgári jog</h3>
 

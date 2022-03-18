@@ -4,7 +4,9 @@ import "./cards.css";
 const IngatlanCard = (props) => {
   return (
     <div className="expl ">
-      <img className="house" src={require("../pics/home.png")} alt="house" />
+      <div className="madalpics">
+        <img className="house" src={require("../pics/home.png")} alt="house" />
+      </div>
       <div className="szoveg ing">
         <h3>Ingatlan</h3>
         <p>

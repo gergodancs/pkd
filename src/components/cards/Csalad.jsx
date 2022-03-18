@@ -3,11 +3,13 @@ import React from "react";
 const Csalad = (props) => {
   return (
     <div className="expl">
-      <img
-        className="house"
-        src={require("../pics/Draw_family.png")}
-        alt="house"
-      />
+      <div className="madalpics">
+        <img
+          className="house"
+          src={require("../pics/Draw_family.png")}
+          alt="house"
+        />
+      </div>
       <div className="szoveg ing">
         <h3>Családjogi és öröklési ügyek:</h3>
         <ul>

@@ -13,7 +13,7 @@
   max-width: 40%;
 
   z-index: 1;
-  position: absolute;
+  position: relative;
   top: 0%;
 
   left: 76%;
@@ -86,7 +86,7 @@ button {
   display: grid;
   grid-template-columns: 2fr 2fr;
   /* grid-template-columns: repeat(2, max-content); */
-  gap: 2rem;
+  gap: 1rem;
 }
 .dropdown-links {
   display: flex;
