@@ -164,6 +164,9 @@ iframe {
 .aboutszoveg {
   height: 550px;
 }
+.dani {
+  width: 350px;
+}
 @media screen and (max-width: 450px) {
   .expl {
     display: flex;
