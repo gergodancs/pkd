@@ -10,21 +10,28 @@ const Vallalkozas = (props) => {
       />
       <div className="szoveg ing">
         <h3>Vállalkozás</h3>
-        <p>
-          cégjog: cégalapítás, illetve módosítás, határozatok tárának vezetése.
-        </p>
+        <ul>
+          <li>cégalapítás</li>
+          <li>cég módosítás</li>
+          <li> határozatok tárának vezetése</li>
+        </ul>
       </div>
-      {/* 
-    <div className="erdeklodes">
-      <label>Név</label>
-      <input type="text" placeholder="Név" />
-      <label>Email</label>
-      <input type="email" placeholder="Email" />
-      <label>Tárgy</label>
-      <textarea rows={20} cols={30} />
-    </div> */}
+
       <div className="exit" onClick={props.onClick}>
-        <p className="close">bezár</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
       </div>
     </div>
   );
