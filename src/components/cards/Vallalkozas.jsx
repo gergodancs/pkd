@@ -5,7 +5,7 @@ const Vallalkozas = (props) => {
     <div className="expl">
       <img
         className="house"
-        src={require("../pics/paperwork.jpg")}
+        src={require("../pics/business.png")}
         alt="house"
       />
       <div className="szoveg ing">

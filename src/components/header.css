@@ -6,7 +6,7 @@
   width: 100vw;
 }
 .wrapper {
-  background: linear-gradient(210deg, #797979, rgb(29, 29, 29));
+  background: linear-gradient(210deg, #2b2b2b, rgb(24, 24, 24));
   height: 100vh;
 }
 .top-img {
@@ -51,7 +51,7 @@
   position: relative;
 }
 .dropdown-menu {
-  width: 320px;
+  width: 260px;
   position: absolute;
   left: 13px;
   top: calc(100% + 0.7rem);
@@ -116,4 +116,19 @@ img {
 }
 .dropdown-links > a:nth-of-type(1) {
   margin-top: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .link {
+    font-size: 15px;
+  }
+  .top-img {
+    max-width: 40%;
+
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+
+    left: 76%;
+  }
 }

@@ -3,7 +3,7 @@ import React from "react";
 const Polg = (props) => {
   return (
     <div className="expl">
-      <img className="house" src={require("../pics/polgari.png")} alt="house" />
+      <img className="house" src={require("../pics/poljo.png")} alt="house" />
       <div className="szoveg ing">
         <h3>Polgár jog</h3>
         <p>

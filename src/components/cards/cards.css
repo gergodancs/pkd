@@ -1,8 +1,9 @@
 .expl {
   display: flex;
   max-width: 45%;
+  height: auto;
   position: relative;
-  left: 25%;
+  left: 30%;
   top: 15%;
   text-align: center;
   column-gap: 1.5rem;
@@ -11,17 +12,17 @@
   padding: 0.75rem;
   border-radius: 0 0.25rem 0.25rem 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(34, 34, 34, 0.904);
-  z-index: 2;
 }
 p {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
 
-  font-size: 1rem;
+  font-size: 16px;
   white-space: pre-line;
-  text-align: center;
+  text-align: left;
   line-height: 1.2rem;
-  color: rgb(24, 24, 24);
+  color: rgb(212, 209, 209);
   font-weight: 500;
+  margin-bottom: 5px;
 }
 .szoveg {
   max-width: 400px;
@@ -68,21 +69,32 @@ textarea {
 .exit {
   position: absolute;
   left: 90%;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 3px 6px;
-  border-radius: 3px;
-  background-color: rgba(173, 186, 194, 0.815);
+
+  background-color: transparent;
 
   cursor: pointer;
   margin-right: 0;
-  box-shadow: 1px 1px 3px black;
 }
 h3 {
-  font-size: 1.3rem;
   margin-bottom: 10px;
   letter-spacing: 0.1rem;
-  color: #222;
+  color: rgb(212, 209, 209);
+  margin-top: 10px;
+}
+.h-6 {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  color: rgb(212, 209, 209);
+}
+li {
+  color: rgb(212, 209, 209);
+  text-align: left;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+ul {
+  margin-bottom: 15px;
 }
 
 .icon {
@@ -117,16 +129,13 @@ h5 {
   width: 30px;
 }
 .house {
-  z-index: -1;
-  width: 400px;
+  max-width: 50%;
   height: auto;
   filter: blur(0px);
 }
-.ing {
-  z-index: 1;
-}
-.szoveg.ing {
-  width: 300px;
+
+.szoveg .ing {
+  max-width: 300px;
 }
 iframe {
   height: 90%;
@@ -136,4 +145,21 @@ iframe {
   color: #222;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 450px) {
+  .expl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+    left: 8%;
+    top: 18%;
+  }
+  .exit {
+    position: relative;
+    margin: 10px;
+    top: 0;
+    left: 0;
+  }
 }

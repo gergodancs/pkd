@@ -3,27 +3,37 @@ import React from "react";
 const Csalad = (props) => {
   return (
     <div className="expl">
-      <img className="house" src={require("../pics/fam2.png")} alt="house" />
+      <img
+        className="house"
+        src={require("../pics/Draw_family.png")}
+        alt="house"
+      />
       <div className="szoveg ing">
-        <h3>Családjog</h3>
-        <p>
-          családjogi és öröklési ügyek: házassági- illetve élettársi
-          vagyonközösség megszüntetése, házassági vagyonjogi szerződés,
-          házassági bontóper, valamint hagyatéki igényekkel kapcsolatos
-          tanácsadás, hagyatéki eljárásban való képviselet.
-        </p>
+        <h3>Családjogi és öröklési ügyek:</h3>
+        <ul>
+          <li>házassági- illetve élettársi vagyonközösség megszüntetése</li>
+          <li>házassági vagyonjogi szerződés</li>
+          <li>házassági bontóper</li>
+          <li>hagyatéki igényekkel kapcsolatos tanácsadás</li>
+          <li>hagyatéki eljárásban való képviselet</li>
+        </ul>
       </div>
-      {/* 
-      <div className="erdeklodes">
-        <label>Név</label>
-        <input type="text" placeholder="Név" />
-        <label>Email</label>
-        <input type="email" placeholder="Email" />
-        <label>Tárgy</label>
-        <textarea rows={20} cols={30} />
-      </div> */}
+
       <div className="exit" onClick={props.onClick}>
-        <p className="close">bezár</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
       </div>
     </div>
   );

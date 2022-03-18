@@ -4,7 +4,7 @@ import "./cards.css";
 const BiztositasCard = (props) => {
   return (
     <div className="expl">
-      <img className="house" src={require("../pics/ins.jpg")} alt="house" />
+      <img className="house" src={require("../pics/ins.png")} alt="house" />
       <div className="szoveg ing">
         <h3>Biztosítás</h3>
         <p>

@@ -3,7 +3,11 @@ import React from "react";
 const Adozas = (props) => {
   return (
     <div className="expl">
-      <img className="house" src={require("../pics/tax.png")} alt="house" />
+      <img
+        className="house"
+        src={require("../pics/konyvelo.png")}
+        alt="house"
+      />
       <div className="szoveg ing">
         <h3>Adóügyek</h3>
         <p>
@@ -15,15 +19,7 @@ const Adozas = (props) => {
           kapcsolatban; adóhatósági beadványok szerkesztése;
         </p>
       </div>
-      {/* 
-    <div className="erdeklodes">
-      <label>Név</label>
-      <input type="text" placeholder="Név" />
-      <label>Email</label>
-      <input type="email" placeholder="Email" />
-      <label>Tárgy</label>
-      <textarea rows={20} cols={30} />
-    </div> */}
+
       <div className="exit" onClick={props.onClick}>
         <p className="close">bezár</p>
       </div>
